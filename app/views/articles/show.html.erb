@@ -1,0 +1,20 @@
+<div class="container text-center">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title">
+        <%= @article.title %>
+      </div>
+      <hr>
+      <div class="card-text">
+        <%= @article.content %>
+      </div>
+    </div>
+  </div>
+  <%= link_to "home", articles_path,
+  class:"btn btn-primary m-3"
+  %>
+  <%= link_to "Edit", edit_article_path ,
+  class:"btn btn-primary m-3"
+  %>
+
+</div>

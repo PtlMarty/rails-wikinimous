@@ -1,0 +1,22 @@
+
+<div class="container text-center">
+<h1>Articles#index</h1>
+<%= link_to "new article", new_article_path %>
+<div class="d-flex flex-column">
+  <%@articles.each do |article|%>
+    <div class="card m-3">
+      <div class="card-body">
+        <div class="card-title">
+          <%= article.title %>
+        </div>
+        <hr>
+        <div class="card-text">
+          <%= article.content %>
+        </div>
+      </div>
+      <%= link_to "Edit", edit_article_path(article.id) %>
+    </div>
+  <% end %>
+
+</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h1>Edit Article</h1>
+  <div class="d-flex flex-column">
+    <%= render 'form', article: @article %>
+  </div>
+    <%= link_to "Delete", article_path(@article),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
+    class: "btn btn-danger mt-3"
+    %>
+</div>
