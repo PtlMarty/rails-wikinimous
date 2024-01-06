@@ -1,6 +1,14 @@
-<div class="container d-flex flex-column">
+<div class="container d-flex flex-column text-center mt-5">
   <h1>New Article</h1>
-  <div class="d-flex flex-column">
-    <%= render 'form', article: @article %>
+  <div class="">
+    <div class="row justify-content-center mt-3">
+      <div class="col-6">
+        <div class="d-flex flex-column shadow">
+          <%= render 'form', article: @article %>
+        </div>
+      </div>
+    </div>
+    <%= link_to 'back', articles_path,
+    class:"btn btn-secondary shadow-sm  mt-3" %>
   </div>
 </div>
