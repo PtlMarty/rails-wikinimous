@@ -3,6 +3,10 @@
   <div class="d-flex flex-column">
     <%= render 'form', article: @article %>
   </div>
+
+    <%= link_to "Home", articles_path,
+    class: "btn btn-secondary mt-3"
+    %>
     <%= link_to "Delete", article_path(@article),
     data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
     class: "btn btn-danger mt-3"
